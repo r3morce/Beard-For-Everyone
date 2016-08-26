@@ -34,7 +34,7 @@
                                 <rect key="frame" x="0.0" y="92" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="34N-R5-nKb" id="5Cd-F4-HJx">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -44,7 +44,13 @@
                             <outlet property="delegate" destination="NIw-gj-gjb" id="1UC-DZ-FIe"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="xzP-0c-vns"/>
+                    <navigationItem key="navigationItem" id="xzP-0c-vns">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="TJc-gd-0l2">
+                            <connections>
+                                <action selector="addNewBeard:" destination="NIw-gj-gjb" id="25B-Z8-NIS"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ec7-Dt-v3o" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

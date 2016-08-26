@@ -11,13 +11,14 @@ import UIKit
 
 class BeardListViewController: UITableViewController {
     
-
+    // MARK: - Properties
     
-    // - MARK: Properties
     private var beards: [Beard] = []
     private let cellId = "BeardCell"
     
-    // - MARK: Functions
+    // MARK: Functions
+    
+    /// Standard viewDidLoad
     override func viewDidLoad() {
         
         title = "Beards for everyone"
@@ -28,10 +29,24 @@ class BeardListViewController: UITableViewController {
         beards.append(Beard(type: .Chin, length: 1.8))
     }
     
+    /// Add a new beard to beards and the table
+    private func insert() {
+        
+        beards.append((Beard(type: .Chin, length: 1.8)))
+        let insertionIndexPath = NSIndexPath(forRow: beards.count-1, inSection: 0)
+        tableView.insertRowsAtIndexPaths([insertionIndexPath], withRowAnimation: .Automatic)
+    }
+    
+    // MARK: - Outlets
+    
+    @IBAction func addNewBeard(sender: UIBarButtonItem) {
+        insert()
+    }
 }
 
-// - MARK: Delegate
+// MARK: - Delegate
 extension BeardListViewController {
+    
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
         let beard = beards[indexPath.row]
