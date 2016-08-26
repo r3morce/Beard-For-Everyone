@@ -20,4 +20,5 @@ struct Beard {
     // - MARK: Properites
     var type: Type
     var length: Double
+    var imageName: String?
 }
