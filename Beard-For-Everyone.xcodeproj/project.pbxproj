@@ -1,0 +1,326 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9E56A9FD1D70028100EC7353 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E56A9FC1D70028100EC7353 /* AppDelegate.swift */; };
+		9E56AA021D70028100EC7353 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E56AA001D70028100EC7353 /* Main.storyboard */; };
+		9E56AA041D70028100EC7353 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E56AA031D70028100EC7353 /* Assets.xcassets */; };
+		9E56AA071D70028100EC7353 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E56AA051D70028100EC7353 /* LaunchScreen.storyboard */; };
+		9E56AA191D70135200EC7353 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9E56AA181D70135200EC7353 /* Info.plist */; };
+		9E56AA231D70147E00EC7353 /* BeardListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E56AA221D70147E00EC7353 /* BeardListViewController.swift */; };
+		9E56AA261D7014E100EC7353 /* Beard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E56AA251D7014E100EC7353 /* Beard.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9E56A9F91D70028100EC7353 /* Beard-For-Everyone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Beard-For-Everyone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E56A9FC1D70028100EC7353 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9E56AA011D70028100EC7353 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9E56AA031D70028100EC7353 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9E56AA061D70028100EC7353 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9E56AA181D70135200EC7353 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
+		9E56AA221D70147E00EC7353 /* BeardListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeardListViewController.swift; sourceTree = "<group>"; };
+		9E56AA251D7014E100EC7353 /* Beard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Beard.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9E56A9F61D70028100EC7353 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9E56A9F01D70028100EC7353 = {
+			isa = PBXGroup;
+			children = (
+				9E56A9FB1D70028100EC7353 /* Beard-For-Everyone */,
+				9E56A9FA1D70028100EC7353 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9E56A9FA1D70028100EC7353 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9E56A9F91D70028100EC7353 /* Beard-For-Everyone.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9E56A9FB1D70028100EC7353 /* Beard-For-Everyone */ = {
+			isa = PBXGroup;
+			children = (
+				9E56AA211D70147E00EC7353 /* BeardList */,
+				9E56AA201D70146D00EC7353 /* Beard */,
+				9E56AA241D7014A000EC7353 /* Misc */,
+				9E56AA031D70028100EC7353 /* Assets.xcassets */,
+				9E56AA001D70028100EC7353 /* Main.storyboard */,
+				9E56A9FC1D70028100EC7353 /* AppDelegate.swift */,
+			);
+			path = "Beard-For-Everyone";
+			sourceTree = "<group>";
+		};
+		9E56AA201D70146D00EC7353 /* Beard */ = {
+			isa = PBXGroup;
+			children = (
+				9E56AA251D7014E100EC7353 /* Beard.swift */,
+			);
+			path = Beard;
+			sourceTree = "<group>";
+		};
+		9E56AA211D70147E00EC7353 /* BeardList */ = {
+			isa = PBXGroup;
+			children = (
+				9E56AA221D70147E00EC7353 /* BeardListViewController.swift */,
+			);
+			path = BeardList;
+			sourceTree = "<group>";
+		};
+		9E56AA241D7014A000EC7353 /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				9E56AA181D70135200EC7353 /* Info.plist */,
+				9E56AA051D70028100EC7353 /* LaunchScreen.storyboard */,
+			);
+			path = Misc;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9E56A9F81D70028100EC7353 /* Beard-For-Everyone */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9E56AA0B1D70028100EC7353 /* Build configuration list for PBXNativeTarget "Beard-For-Everyone" */;
+			buildPhases = (
+				9E56A9F51D70028100EC7353 /* Sources */,
+				9E56A9F61D70028100EC7353 /* Frameworks */,
+				9E56A9F71D70028100EC7353 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Beard-For-Everyone";
+			productName = "Beard-For-Everyone";
+			productReference = 9E56A9F91D70028100EC7353 /* Beard-For-Everyone.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9E56A9F11D70028100EC7353 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = mathias;
+				TargetAttributes = {
+					9E56A9F81D70028100EC7353 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 9E56A9F41D70028100EC7353 /* Build configuration list for PBXProject "Beard-For-Everyone" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9E56A9F01D70028100EC7353;
+			productRefGroup = 9E56A9FA1D70028100EC7353 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9E56A9F81D70028100EC7353 /* Beard-For-Everyone */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9E56A9F71D70028100EC7353 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E56AA191D70135200EC7353 /* Info.plist in Resources */,
+				9E56AA071D70028100EC7353 /* LaunchScreen.storyboard in Resources */,
+				9E56AA041D70028100EC7353 /* Assets.xcassets in Resources */,
+				9E56AA021D70028100EC7353 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9E56A9F51D70028100EC7353 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E56AA261D7014E100EC7353 /* Beard.swift in Sources */,
+				9E56AA231D70147E00EC7353 /* BeardListViewController.swift in Sources */,
+				9E56A9FD1D70028100EC7353 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9E56AA001D70028100EC7353 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9E56AA011D70028100EC7353 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9E56AA051D70028100EC7353 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9E56AA061D70028100EC7353 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			path = ..;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9E56AA091D70028100EC7353 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9E56AA0A1D70028100EC7353 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9E56AA0C1D70028100EC7353 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Beard-For-Everyone/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "acme-hacking.Beard-For-Everyone";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9E56AA0D1D70028100EC7353 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Beard-For-Everyone/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "acme-hacking.Beard-For-Everyone";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9E56A9F41D70028100EC7353 /* Build configuration list for PBXProject "Beard-For-Everyone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E56AA091D70028100EC7353 /* Debug */,
+				9E56AA0A1D70028100EC7353 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9E56AA0B1D70028100EC7353 /* Build configuration list for PBXNativeTarget "Beard-For-Everyone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E56AA0C1D70028100EC7353 /* Debug */,
+				9E56AA0D1D70028100EC7353 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9E56A9F11D70028100EC7353 /* Project object */;
+}
