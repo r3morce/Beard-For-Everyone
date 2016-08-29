@@ -12,8 +12,7 @@ import UIKit
 class BeardListViewController: UITableViewController {
     
     // MARK: - Properties
-    
-    private var beards: [Beard] = []
+
     private let cellId = "BeardCell"
     
     // MARK: Functions
@@ -24,9 +23,7 @@ class BeardListViewController: UITableViewController {
         title = "Beards for everyone"
         
         // Mock data
-        beards.append(Beard(type: .Mustache, length: 5.2, imageName: "mustache"))
-        beards.append(Beard(type: .Full, length: 12.8, imageName: "beard"))
-        beards.append(Beard(type: .Chin, length: 1.8, imageName: nil))
+
     }
     
     // MARK: - Outlets
@@ -43,7 +40,7 @@ extension BeardListViewController {
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
-        let beard = beards[indexPath.row]
+        let beard = Global.beards[indexPath.row]
         let text = String(format: "%@ with length %1.2f", beard.type.rawValue, beard.length)
         let cell = tableView.dequeueReusableCellWithIdentifier(cellId, forIndexPath: indexPath)
         
@@ -60,13 +57,13 @@ extension BeardListViewController {
     override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
         if (editingStyle == UITableViewCellEditingStyle.Delete) {
             
-            beards.removeAtIndex(indexPath.row)
+            Global.beards.removeAtIndex(indexPath.row)
             tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Automatic)
         }
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return beards.count
+        return Global.beards.count
     }
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {

@@ -15,6 +15,7 @@
 		9E56AA231D70147E00EC7353 /* BeardListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E56AA221D70147E00EC7353 /* BeardListViewController.swift */; };
 		9E56AA261D7014E100EC7353 /* Beard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E56AA251D7014E100EC7353 /* Beard.swift */; };
 		9EA85C531D7476A800521255 /* BeardInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA85C521D7476A800521255 /* BeardInputViewController.swift */; };
+		9EA85C551D748C4500521255 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA85C541D748C4500521255 /* Global.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		9E56AA221D70147E00EC7353 /* BeardListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeardListViewController.swift; sourceTree = "<group>"; };
 		9E56AA251D7014E100EC7353 /* Beard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Beard.swift; sourceTree = "<group>"; };
 		9EA85C521D7476A800521255 /* BeardInputViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeardInputViewController.swift; sourceTree = "<group>"; };
+		9EA85C541D748C4500521255 /* Global.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 		9E56A9FB1D70028100EC7353 /* Beard-For-Everyone */ = {
 			isa = PBXGroup;
 			children = (
+				9EA85C541D748C4500521255 /* Global.swift */,
 				9E56AA211D70147E00EC7353 /* BeardList */,
 				9E56AA201D70146D00EC7353 /* Beard */,
 				9E56AA241D7014A000EC7353 /* Misc */,
@@ -170,6 +173,7 @@
 				9E56AA261D7014E100EC7353 /* Beard.swift in Sources */,
 				9E56AA231D70147E00EC7353 /* BeardListViewController.swift in Sources */,
 				9EA85C531D7476A800521255 /* BeardInputViewController.swift in Sources */,
+				9EA85C551D748C4500521255 /* Global.swift in Sources */,
 				9E56A9FD1D70028100EC7353 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
