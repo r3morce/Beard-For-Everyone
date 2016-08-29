@@ -1,0 +1,15 @@
+/* 
+  Localizable.strings
+  Beard-For-Everyone
+
+  Created by mathias@privat on 29.08.16.
+  Copyright © 2016 mathias. All rights reserved.
+*/
+
+"BEARD_LIST_TEXT" = "%@ with length %1.2f";
+"BEARD_TYPE_LABEL" = "Beard type";
+"BEARD_TYPE_INPUT" = "Beard type";
+"BEARD_LENGTH_LABEL" = "Beard length";
+"BEARD_LENGTH_INPUT" = "Beard length";
+"BEARD_SAVE_BUTTON" = "Save";
+"DONE" = "Done";

@@ -16,6 +16,7 @@
 		9E56AA261D7014E100EC7353 /* Beard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E56AA251D7014E100EC7353 /* Beard.swift */; };
 		9EA85C531D7476A800521255 /* BeardInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA85C521D7476A800521255 /* BeardInputViewController.swift */; };
 		9EA85C551D748C4500521255 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA85C541D748C4500521255 /* Global.swift */; };
+		9EFC7D021D74A04300420F5F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9EFC7D011D74A04300420F5F /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		9E56AA251D7014E100EC7353 /* Beard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Beard.swift; sourceTree = "<group>"; };
 		9EA85C521D7476A800521255 /* BeardInputViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeardInputViewController.swift; sourceTree = "<group>"; };
 		9EA85C541D748C4500521255 /* Global.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
+		9EFC7D011D74A04300420F5F /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = Assets.xcassets/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 				9E56AA031D70028100EC7353 /* Assets.xcassets */,
 				9E56AA001D70028100EC7353 /* Main.storyboard */,
 				9E56A9FC1D70028100EC7353 /* AppDelegate.swift */,
+				9EFC7D011D74A04300420F5F /* Localizable.strings */,
 			);
 			path = "Beard-For-Everyone";
 			sourceTree = "<group>";
@@ -156,6 +159,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9EFC7D021D74A04300420F5F /* Localizable.strings in Resources */,
 				9E56AA191D70135200EC7353 /* Info.plist in Resources */,
 				9E56AA071D70028100EC7353 /* LaunchScreen.storyboard in Resources */,
 				9E56AA041D70028100EC7353 /* Assets.xcassets in Resources */,
