@@ -56,5 +56,67 @@
             </objects>
             <point key="canvasLocation" x="-57" y="296"/>
         </scene>
+        <!--Beard Input View Controller-->
+        <scene sceneID="zKQ-K8-fP4">
+            <objects>
+                <viewController storyboardIdentifier="BeardInputViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="qa8-vU-pB8" customClass="BeardInputViewController" customModule="Beard_For_Everyone" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1I8-FH-9ZT"/>
+                        <viewControllerLayoutGuide type="bottom" id="vPN-51-4nv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="a7m-zj-UqC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Pj-am-TtY" userLabel="Type Label">
+                                <rect key="frame" x="11" y="91" width="560" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8Fc-Ou-K2C" userLabel="Type Text Field">
+                                <rect key="frame" x="11" y="138" width="560" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Length" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W2L-4f-OXe" userLabel="Length Label">
+                                <rect key="frame" x="11" y="176" width="569" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pp9-6U-j7X" userLabel="Length Text Field">
+                                <rect key="frame" x="11" y="205" width="569" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="pp9-6U-j7X" firstAttribute="leading" secondItem="a7m-zj-UqC" secondAttribute="leading" constant="8" id="3Mh-B0-re0"/>
+                            <constraint firstItem="W2L-4f-OXe" firstAttribute="leading" secondItem="a7m-zj-UqC" secondAttribute="leading" constant="8" id="GBM-XH-ee9"/>
+                            <constraint firstAttribute="trailing" secondItem="9Pj-am-TtY" secondAttribute="trailing" constant="8" id="GaV-mh-RsG"/>
+                            <constraint firstItem="pp9-6U-j7X" firstAttribute="top" secondItem="W2L-4f-OXe" secondAttribute="bottom" constant="8" id="MHp-b0-laU"/>
+                            <constraint firstItem="9Pj-am-TtY" firstAttribute="top" secondItem="1I8-FH-9ZT" secondAttribute="bottom" constant="8" id="OHC-PE-vYd"/>
+                            <constraint firstItem="8Fc-Ou-K2C" firstAttribute="top" secondItem="9Pj-am-TtY" secondAttribute="bottom" constant="8" id="PlT-VK-k7s"/>
+                            <constraint firstAttribute="trailing" secondItem="pp9-6U-j7X" secondAttribute="trailing" constant="8" id="ca5-nR-gCi"/>
+                            <constraint firstItem="9Pj-am-TtY" firstAttribute="leading" secondItem="a7m-zj-UqC" secondAttribute="leading" constant="8" id="e0e-vW-Yee"/>
+                            <constraint firstAttribute="trailing" secondItem="W2L-4f-OXe" secondAttribute="trailing" constant="8" id="fHp-2g-pVz"/>
+                            <constraint firstAttribute="trailing" secondItem="8Fc-Ou-K2C" secondAttribute="trailing" constant="8" id="gOg-DQ-oJQ"/>
+                            <constraint firstItem="8Fc-Ou-K2C" firstAttribute="leading" secondItem="a7m-zj-UqC" secondAttribute="leading" constant="8" id="hws-5Y-mRn"/>
+                            <constraint firstItem="W2L-4f-OXe" firstAttribute="top" secondItem="8Fc-Ou-K2C" secondAttribute="bottom" constant="16" id="r5O-c5-5ZH"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="lenghtLabel" destination="W2L-4f-OXe" id="eha-zl-Nwc"/>
+                        <outlet property="lengthTextfield" destination="pp9-6U-j7X" id="2Gu-N5-d7N"/>
+                        <outlet property="typeLabel" destination="9Pj-am-TtY" id="DTz-c1-BmC"/>
+                        <outlet property="typeTextfield" destination="8Fc-Ou-K2C" id="A6O-1B-27P"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QBX-YI-o7P" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="580" y="296"/>
+        </scene>
     </scenes>
 </document>

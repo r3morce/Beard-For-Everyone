@@ -14,6 +14,7 @@
 		9E56AA191D70135200EC7353 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9E56AA181D70135200EC7353 /* Info.plist */; };
 		9E56AA231D70147E00EC7353 /* BeardListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E56AA221D70147E00EC7353 /* BeardListViewController.swift */; };
 		9E56AA261D7014E100EC7353 /* Beard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E56AA251D7014E100EC7353 /* Beard.swift */; };
+		9EA85C531D7476A800521255 /* BeardInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA85C521D7476A800521255 /* BeardInputViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		9E56AA181D70135200EC7353 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
 		9E56AA221D70147E00EC7353 /* BeardListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeardListViewController.swift; sourceTree = "<group>"; };
 		9E56AA251D7014E100EC7353 /* Beard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Beard.swift; sourceTree = "<group>"; };
+		9EA85C521D7476A800521255 /* BeardInputViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeardInputViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				9E56AA221D70147E00EC7353 /* BeardListViewController.swift */,
+				9EA85C521D7476A800521255 /* BeardInputViewController.swift */,
 			);
 			path = BeardList;
 			sourceTree = "<group>";
@@ -166,6 +169,7 @@
 			files = (
 				9E56AA261D7014E100EC7353 /* Beard.swift in Sources */,
 				9E56AA231D70147E00EC7353 /* BeardListViewController.swift in Sources */,
+				9EA85C531D7476A800521255 /* BeardInputViewController.swift in Sources */,
 				9E56A9FD1D70028100EC7353 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -319,6 +323,7 @@
 				9E56AA0D1D70028100EC7353 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

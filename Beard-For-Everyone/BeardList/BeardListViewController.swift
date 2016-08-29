@@ -29,18 +29,12 @@ class BeardListViewController: UITableViewController {
         beards.append(Beard(type: .Chin, length: 1.8, imageName: nil))
     }
     
-    /// Add a new beard to beards and the table
-    private func insert() {
-        
-        beards.append((Beard(type: .Chin, length: 1.8, imageName: nil)))
-        let insertionIndexPath = NSIndexPath(forRow: beards.count-1, inSection: 0)
-        tableView.insertRowsAtIndexPaths([insertionIndexPath], withRowAnimation: .Automatic)
-    }
-    
     // MARK: - Outlets
     
     @IBAction func addNewBeard(sender: UIBarButtonItem) {
-        insert()
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let viewController = storyboard.instantiateViewControllerWithIdentifier("BeardInputViewController")
+        navigationController?.pushViewController(viewController, animated: true)
     }
 }
 
