@@ -13,7 +13,6 @@ class BeardInputViewController: UIViewController {
     // MARK: - Properties
     
     private let picker = UIPickerView()
-
     
     // MARK: - Outlets
     
@@ -39,7 +38,7 @@ class BeardInputViewController: UIViewController {
             lenghtLabel.font = UIFont(name: "", size: 32.0)
         }
     }
-
+    
     
     @IBOutlet weak var lengthTextfield: UITextField! {
         didSet {
@@ -47,36 +46,60 @@ class BeardInputViewController: UIViewController {
             lengthTextfield.font = UIFont(name: "", size: 32.0)
         }
     }
-
-    // MARK: - Functions
+    
+    // MARK: - Override functions
     
     override func viewDidLoad() {
         super.viewDidLoad()
-     
+        
         picker.delegate = self
-        typeTextfield.inputView = picker
+        self.typeTextfield.inputView = picker
     }
     
     override func viewWillAppear(animated: Bool) {
-        navigationItem.rightBarButtonItem = UIBarButtonItem(title: NSLocalizedString("BEARD_SAVE_BUTTON", comment: ""), style: .Plain, target: self, action: #selector(save))
+        super.viewWillAppear(animated)
+        
+        // save button
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: NSLocalizedString("BEARD_SAVE_BUTTON", comment: ""), style: .Plain, target: self, action: #selector(saveBeard))
+        
+        // picker
+        let pickerToolbar = UIToolbar(frame: CGRectMake(0,0,320,44))
+        let closePickerButton = UIBarButtonItem(barButtonSystemItem: .Done, target: self, action: #selector(BeardInputViewController.closePicker))
+        // let flexibleSpace = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.FlexibleSpace, target: nil, action: nil);
+        
+        pickerToolbar.items = [/*flexibleSpace, */ closePickerButton]
+        
+        picker.addSubview(pickerToolbar)
     }
     
-    func save() {
+    // MARK: - Functions
+    
+    func closePicker() {
+        print("done")
+        // picker.hidden = true
+        // picker.endEditing(true)
+    }
+    
+    func saveBeard() {
         
-//        let newBeard = Beard(type: <#T##Beard.Type#>, length: <#T##Double#>, imageName: <#T##String?#>)
+        guard let inputLength = lengthTextfield.text, let length = Double(inputLength) else {
+            return
+        }
         
+        guard let inputType = typeTextfield.text, let type = BeardType(rawValue: inputType) else {
+            return
+        }
         
+        let beard = Beard(type: type, length: length, imageName: nil)
         
-        print(typeTextfield.text)
-        print(lengthTextfield.text)
-        
+        Global.beards.append(beard)
     }
 }
 
 // MARK: - Extension: UIPickerViewDelegate, UIPickerViewDataSource
 
 extension BeardInputViewController: UIPickerViewDelegate, UIPickerViewDataSource {
-
+    
     func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
         return 1
     }

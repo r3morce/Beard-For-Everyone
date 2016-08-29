@@ -9,16 +9,10 @@
 import Foundation
 
 struct Beard {
-    
-    // - MARK: Enum
-    enum Type: String {
-        case Full = "Full"
-        case Mustache = "Mustache"
-        case Chin = "Chin"
-    }
-    
+
     // - MARK: Properites
-    var type: Type
+    
+    var type: BeardType
     var length: Double
     var imageName: String?
 }
