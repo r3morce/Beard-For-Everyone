@@ -52,34 +52,42 @@ class BeardInputViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        picker.delegate = self
-        self.typeTextfield.inputView = picker
-    }
-    
-    override func viewWillAppear(animated: Bool) {
-        super.viewWillAppear(animated)
-        
         // save button
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: NSLocalizedString("BEARD_SAVE_BUTTON", comment: ""), style: .Plain, target: self, action: #selector(saveBeard))
         
-        // picker
-        let pickerToolbar = UIToolbar(frame: CGRectMake(0,0,320,44))
-        let closePickerButton = UIBarButtonItem(barButtonSystemItem: .Done, target: self, action: #selector(BeardInputViewController.closePicker))
-        // let flexibleSpace = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.FlexibleSpace, target: nil, action: nil);
-        
-        pickerToolbar.items = [/*flexibleSpace, */ closePickerButton]
-        
-        picker.addSubview(pickerToolbar)
+        setupPicker()
     }
     
     // MARK: - Functions
     
-    func closePicker() {
-        print("done")
-        // picker.hidden = true
-        // picker.endEditing(true)
+    /// setup picker
+    private func setupPicker() {
+        
+        // close picker button
+        let pickerToolbar = UIToolbar()
+        pickerToolbar.sizeToFit()
+        pickerToolbar.userInteractionEnabled = true
+        
+        // close picker button
+        let closePickerBarButton = UIBarButtonItem(barButtonSystemItem: .Done, target: self, action: #selector(BeardInputViewController.closePicker))
+        
+        let flexibleSpace = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.FlexibleSpace, target: nil, action: nil);
+        
+        pickerToolbar.items = [flexibleSpace, closePickerBarButton]
+        
+        picker.delegate = self
+        self.typeTextfield.inputView = picker
+        typeTextfield.inputAccessoryView = pickerToolbar
+        
     }
     
+    /// close picker
+    func closePicker() {
+        print("done")
+        typeTextfield.resignFirstResponder()
+    }
+    
+    /// save beard
     func saveBeard() {
         
         guard let inputLength = lengthTextfield.text, let length = Double(inputLength) else {
