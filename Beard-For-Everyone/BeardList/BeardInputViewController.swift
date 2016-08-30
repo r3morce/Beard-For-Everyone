@@ -55,34 +55,57 @@ class BeardInputViewController: UIViewController {
         // save button
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: NSLocalizedString("BEARD_SAVE_BUTTON", comment: ""), style: .Plain, target: self, action: #selector(saveBeard))
         
-        setupPicker()
+        setupTypePicker()
     }
     
     // MARK: - Functions
     
-    /// setup picker
-    private func setupPicker() {
+    /// setup length picker
+    
+    private func setupLengthPicker() {
+        // close picker button
+        let toolbar = UIToolbar()
+        toolbar.sizeToFit()
+        toolbar.userInteractionEnabled = true
         
         // close picker button
-        let pickerToolbar = UIToolbar()
-        pickerToolbar.sizeToFit()
-        pickerToolbar.userInteractionEnabled = true
-        
-        // close picker button
-        let closePickerBarButton = UIBarButtonItem(barButtonSystemItem: .Done, target: self, action: #selector(BeardInputViewController.closePicker))
+        let closePickerBarButton = UIBarButtonItem(barButtonSystemItem: .Done, target: self, action: #selector(BeardInputViewController.closeTypePicker))
         
         let flexibleSpace = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.FlexibleSpace, target: nil, action: nil);
         
-        pickerToolbar.items = [flexibleSpace, closePickerBarButton]
+        toolbar.items = [flexibleSpace, closePickerBarButton]
+ 
+        lengthTextfield.inputAccessoryView = toolbar
+    }
+    
+    /// setup type picker
+    private func setupTypePicker() {
+        
+        // close picker button
+        let toolbar = UIToolbar()
+        toolbar.sizeToFit()
+        toolbar.userInteractionEnabled = true
+        
+        // close picker button
+        let closePickerBarButton = UIBarButtonItem(barButtonSystemItem: .Done, target: self, action: #selector(BeardInputViewController.closeLengthPicker))
+        
+        let flexibleSpace = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.FlexibleSpace, target: nil, action: nil);
+        
+        toolbar.items = [flexibleSpace, closePickerBarButton]
         
         picker.delegate = self
         self.typeTextfield.inputView = picker
-        typeTextfield.inputAccessoryView = pickerToolbar
+        typeTextfield.inputAccessoryView = toolbar
         
     }
     
-    /// close picker
-    func closePicker() {
+    /// close length picker
+    func closeLengthPicker() {
+        lengthTextfield.endEditing(true)
+    }
+    
+    /// close type picker
+    func closeTypePicker() {
         typeTextfield.endEditing(true)
     }
     
