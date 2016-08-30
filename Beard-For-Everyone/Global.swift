@@ -24,5 +24,7 @@ enum BeardType: String {
     case Full = "Full"
     case Mustache = "Mustache"
     case Chin = "Chin"
+    
+    static let all = [None, Full, Mustache, Chin]
 }
 

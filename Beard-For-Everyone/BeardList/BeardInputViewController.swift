@@ -135,15 +135,15 @@ extension BeardInputViewController: UIPickerViewDelegate, UIPickerViewDataSource
     }
     
     func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return Global.beards.count
+        return BeardType.all.count
     }
     
     func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return Global.beards[row].type.rawValue
+        return BeardType.all[row].rawValue
     }
     
     func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        typeTextfield.text = Global.beards[row].type.rawValue
+        typeTextfield.text = BeardType.all[row].rawValue
     }
     
     
