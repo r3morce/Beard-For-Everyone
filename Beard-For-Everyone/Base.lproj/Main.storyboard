@@ -90,10 +90,17 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="done"/>
                             </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="r7Z-z6-U1L" userLabel="Date Text Field">
+                                <rect key="frame" x="20" y="550" width="560" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="vPN-51-4nv" firstAttribute="top" secondItem="r7Z-z6-U1L" secondAttribute="bottom" constant="8" id="3Fz-Si-d4j"/>
                             <constraint firstItem="pp9-6U-j7X" firstAttribute="leading" secondItem="a7m-zj-UqC" secondAttribute="leading" constant="8" id="3Mh-B0-re0"/>
+                            <constraint firstAttribute="trailing" secondItem="r7Z-z6-U1L" secondAttribute="trailing" constant="8" id="60A-R4-3L2"/>
                             <constraint firstItem="W2L-4f-OXe" firstAttribute="leading" secondItem="a7m-zj-UqC" secondAttribute="leading" constant="8" id="GBM-XH-ee9"/>
                             <constraint firstAttribute="trailing" secondItem="9Pj-am-TtY" secondAttribute="trailing" constant="8" id="GaV-mh-RsG"/>
                             <constraint firstItem="pp9-6U-j7X" firstAttribute="top" secondItem="W2L-4f-OXe" secondAttribute="bottom" constant="8" id="MHp-b0-laU"/>
@@ -104,10 +111,12 @@
                             <constraint firstAttribute="trailing" secondItem="W2L-4f-OXe" secondAttribute="trailing" constant="8" id="fHp-2g-pVz"/>
                             <constraint firstAttribute="trailing" secondItem="8Fc-Ou-K2C" secondAttribute="trailing" constant="8" id="gOg-DQ-oJQ"/>
                             <constraint firstItem="8Fc-Ou-K2C" firstAttribute="leading" secondItem="a7m-zj-UqC" secondAttribute="leading" constant="8" id="hws-5Y-mRn"/>
+                            <constraint firstItem="r7Z-z6-U1L" firstAttribute="leading" secondItem="a7m-zj-UqC" secondAttribute="leading" constant="8" id="otU-q3-X8R"/>
                             <constraint firstItem="W2L-4f-OXe" firstAttribute="top" secondItem="8Fc-Ou-K2C" secondAttribute="bottom" constant="16" id="r5O-c5-5ZH"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="dateTextfield" destination="r7Z-z6-U1L" id="CmY-KV-she"/>
                         <outlet property="lenghtLabel" destination="W2L-4f-OXe" id="eha-zl-Nwc"/>
                         <outlet property="lengthTextfield" destination="pp9-6U-j7X" id="2Gu-N5-d7N"/>
                         <outlet property="typeLabel" destination="9Pj-am-TtY" id="DTz-c1-BmC"/>

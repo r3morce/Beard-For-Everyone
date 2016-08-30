@@ -51,6 +51,12 @@ class BeardInputViewController: UIViewController {
         }
     }
     
+    @IBOutlet weak var dateTextfield: UITextField! {
+        didSet {
+            dateTextfield.text = "Todo: date"
+        }
+    }
+    
     // MARK: - Override functions
     
     override func viewDidLoad() {
@@ -127,7 +133,6 @@ class BeardInputViewController: UIViewController {
         }
         
         let beard = Beard(type: type, length: length, imageName: nil)
-        
         Global.beards.append(beard)
         
         navigationController?.popViewControllerAnimated(true)
