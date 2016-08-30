@@ -14,5 +14,5 @@ struct Beard {
     
     var type: BeardType
     var length: Double
-    var imageName: String?
+//    var imageName: String?
 }

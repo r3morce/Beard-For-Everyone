@@ -132,8 +132,9 @@ class BeardInputViewController: UIViewController {
             return
         }
         
-        let beard = Beard(type: type, length: length, imageName: nil)
-        Global.beards.append(beard)
+        let beard = Beard(type: type, length: length)
+        let snap = Snap(beard: beard, date: NSDate())
+        Global.snaps.append(snap)
         
         navigationController?.popViewControllerAnimated(true)
     }

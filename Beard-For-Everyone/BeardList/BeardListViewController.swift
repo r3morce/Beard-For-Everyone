@@ -44,11 +44,11 @@ extension BeardListViewController {
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
-        let beard = Global.beards[indexPath.row]
+        let beard = Global.snaps[indexPath.row].beard
         let text = String(format: NSLocalizedString("BEARD_LIST_TEXT", comment: "two string parameter"), beard.type.rawValue, beard.length.niceLength())
         let cell = tableView.dequeueReusableCellWithIdentifier(cellId, forIndexPath: indexPath)
         
-        cell.imageView?.image = UIImage(named: beard.imageName ?? "")
+        // cell.imageView?.image = UIImage(named: beard.imageName ?? "")
         cell.textLabel?.text = text
         
         return cell
@@ -61,13 +61,13 @@ extension BeardListViewController {
     override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
         if (editingStyle == UITableViewCellEditingStyle.Delete) {
             
-            Global.beards.removeAtIndex(indexPath.row)
+            Global.snaps.removeAtIndex(indexPath.row)
             tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Automatic)
         }
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return Global.beards.count
+        return Global.snaps.count
     }
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
