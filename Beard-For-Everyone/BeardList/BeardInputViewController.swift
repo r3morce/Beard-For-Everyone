@@ -29,7 +29,7 @@ class BeardInputViewController: UIViewController {
     
     @IBOutlet weak var typeTextfield: UITextField! {
         didSet {
-            typeTextfield.placeholder = NSLocalizedString("BEARD_TYPE_INPUT", comment: "")
+            typeTextfield.placeholder = BeardType.None.rawValue
             typeTextfield.font = UIFont(name: "", size: 32.0)
             
             typeTextfield.inputView = picker
