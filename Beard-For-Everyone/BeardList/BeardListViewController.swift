@@ -17,13 +17,17 @@ class BeardListViewController: UITableViewController {
     
     // MARK: Functions
     
-    /// Standard viewDidLoad
+    /// Standard view will appear
     override func viewDidLoad() {
         
         title = NSLocalizedString("APP_NAME", comment: "")
+    }
+    
+    // Standart view will appear
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
         
-        // Mock data
-
+        tableView.reloadData()
     }
     
     // MARK: - Outlets

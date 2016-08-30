@@ -14,6 +14,10 @@ class BeardInputViewController: UIViewController {
     
     private let picker = UIPickerView()
     
+    // MARK: - Actions
+    
+    
+    
     // MARK: - Outlets
     
     @IBOutlet weak var typeLabel: UILabel! {
@@ -55,7 +59,9 @@ class BeardInputViewController: UIViewController {
         // save button
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: NSLocalizedString("BEARD_SAVE_BUTTON", comment: ""), style: .Plain, target: self, action: #selector(saveBeard))
         
+        // setup picker
         setupTypePicker()
+        setupLengthPicker()
     }
     
     // MARK: - Functions
@@ -69,7 +75,7 @@ class BeardInputViewController: UIViewController {
         toolbar.userInteractionEnabled = true
         
         // close picker button
-        let closePickerBarButton = UIBarButtonItem(barButtonSystemItem: .Done, target: self, action: #selector(BeardInputViewController.closeTypePicker))
+        let closePickerBarButton = UIBarButtonItem(barButtonSystemItem: .Done, target: self, action: #selector(BeardInputViewController.closeLengthPicker))
         
         let flexibleSpace = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.FlexibleSpace, target: nil, action: nil);
         
@@ -87,7 +93,7 @@ class BeardInputViewController: UIViewController {
         toolbar.userInteractionEnabled = true
         
         // close picker button
-        let closePickerBarButton = UIBarButtonItem(barButtonSystemItem: .Done, target: self, action: #selector(BeardInputViewController.closeLengthPicker))
+        let closePickerBarButton = UIBarButtonItem(barButtonSystemItem: .Done, target: self, action: #selector(BeardInputViewController.closeTypePicker))
         
         let flexibleSpace = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.FlexibleSpace, target: nil, action: nil);
         
@@ -123,6 +129,8 @@ class BeardInputViewController: UIViewController {
         let beard = Beard(type: type, length: length, imageName: nil)
         
         Global.beards.append(beard)
+        
+        navigationController?.popViewControllerAnimated(true)
     }
 }
 
