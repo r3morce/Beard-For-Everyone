@@ -41,7 +41,7 @@ extension BeardListViewController {
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
         let beard = Global.beards[indexPath.row]
-        let text = String(format: NSLocalizedString("BEARD_LIST_TEXT", comment: "String and Double as parameter"), beard.type.rawValue, beard.length)
+        let text = String(format: NSLocalizedString("BEARD_LIST_TEXT", comment: "two string parameter"), beard.type.rawValue, beard.length.niceLength())
         let cell = tableView.dequeueReusableCellWithIdentifier(cellId, forIndexPath: indexPath)
         
         cell.imageView?.image = UIImage(named: beard.imageName ?? "")

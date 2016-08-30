@@ -17,6 +17,7 @@
 		9EA85C531D7476A800521255 /* BeardInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA85C521D7476A800521255 /* BeardInputViewController.swift */; };
 		9EA85C551D748C4500521255 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA85C541D748C4500521255 /* Global.swift */; };
 		9EFC7D021D74A04300420F5F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9EFC7D011D74A04300420F5F /* Localizable.strings */; };
+		9EFC7D231D7560BD00420F5F /* Double+niceLength.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFC7D221D7560BD00420F5F /* Double+niceLength.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		9EA85C521D7476A800521255 /* BeardInputViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeardInputViewController.swift; sourceTree = "<group>"; };
 		9EA85C541D748C4500521255 /* Global.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
 		9EFC7D011D74A04300420F5F /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = Assets.xcassets/Localizable.strings; sourceTree = "<group>"; };
+		9EFC7D221D7560BD00420F5F /* Double+niceLength.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Double+niceLength.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				9EA85C541D748C4500521255 /* Global.swift */,
+				9EFC7D211D7560A500420F5F /* Extensions */,
 				9E56AA211D70147E00EC7353 /* BeardList */,
 				9E56AA201D70146D00EC7353 /* Beard */,
 				9E56AA241D7014A000EC7353 /* Misc */,
@@ -99,6 +102,14 @@
 				9E56AA051D70028100EC7353 /* LaunchScreen.storyboard */,
 			);
 			path = Misc;
+			sourceTree = "<group>";
+		};
+		9EFC7D211D7560A500420F5F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9EFC7D221D7560BD00420F5F /* Double+niceLength.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,6 +188,7 @@
 				9E56AA261D7014E100EC7353 /* Beard.swift in Sources */,
 				9E56AA231D70147E00EC7353 /* BeardListViewController.swift in Sources */,
 				9EA85C531D7476A800521255 /* BeardInputViewController.swift in Sources */,
+				9EFC7D231D7560BD00420F5F /* Double+niceLength.swift in Sources */,
 				9EA85C551D748C4500521255 /* Global.swift in Sources */,
 				9E56A9FD1D70028100EC7353 /* AppDelegate.swift in Sources */,
 			);
