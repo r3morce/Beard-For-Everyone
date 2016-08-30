@@ -20,7 +20,7 @@ class BeardListViewController: UITableViewController {
     /// Standard viewDidLoad
     override func viewDidLoad() {
         
-        title = "Beards for everyone"
+        title = NSLocalizedString("APP_NAME", comment: "")
         
         // Mock data
 

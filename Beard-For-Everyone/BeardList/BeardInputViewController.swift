@@ -83,8 +83,7 @@ class BeardInputViewController: UIViewController {
     
     /// close picker
     func closePicker() {
-        print("done")
-        typeTextfield.resignFirstResponder()
+        typeTextfield.endEditing(true)
     }
     
     /// save beard

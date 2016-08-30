@@ -20,6 +20,7 @@ struct Global {
 // - MARK: Enum
 
 enum BeardType: String {
+    case None = "None"
     case Full = "Full"
     case Mustache = "Mustache"
     case Chin = "Chin"

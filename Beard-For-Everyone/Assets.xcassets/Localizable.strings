@@ -6,6 +6,7 @@
   Copyright © 2016 mathias. All rights reserved.
 */
 
+"APP_NAME" = "Beards for everyone";
 "BEARD_LIST_TEXT" = "%@ with length %1.2f";
 "BEARD_TYPE_LABEL" = "Beard type";
 "BEARD_TYPE_INPUT" = "Beard type";
