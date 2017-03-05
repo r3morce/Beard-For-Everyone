@@ -7,10 +7,17 @@
 */
 
 "APP_NAME" = "Beards for everyone";
+
+"DELETE_PHOTO_BUTTON" = "Remove photo";
+"OPEN_PHOTO_LIBRARY_BUTTON" = "Open photo library";
+
 "BEARD_LIST_TEXT" = "%@ with length %@";
+
 "BEARD_TYPE_LABEL" = "Beard type";
 "BEARD_TYPE_INPUT" = "Beard type";
+
 "BEARD_LENGTH_LABEL" = "Beard length";
 "BEARD_LENGTH_INPUT" = "Beard length";
+
 "BEARD_SAVE_BUTTON" = "Save";
 "DONE" = "Done";

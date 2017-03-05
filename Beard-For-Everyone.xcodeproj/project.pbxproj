@@ -73,7 +73,7 @@
 				9EC076711E6C51AA000A6B32 /* Core data */,
 				9EC076781E6C5C08000A6B32 /* Entities */,
 				9EC076691E6C50CF000A6B32 /* Model */,
-				9EC0766C1E6C518B000A6B32 /* Beard list */,
+				9EC0766C1E6C518B000A6B32 /* Controller */,
 				9E56AA241D7014A000EC7353 /* Misc */,
 				9E56AA031D70028100EC7353 /* Assets.xcassets */,
 				9E56AA001D70028100EC7353 /* Main.storyboard */,
@@ -100,12 +100,13 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		9EC0766C1E6C518B000A6B32 /* Beard list */ = {
+		9EC0766C1E6C518B000A6B32 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
 				9EC0766E1E6C519A000A6B32 /* BeardListViewController.swift */,
 				9EC0766D1E6C519A000A6B32 /* BeardInputViewController.swift */,
 			);
+			name = Controller;
 			path = "Beard list";
 			sourceTree = "<group>";
 		};

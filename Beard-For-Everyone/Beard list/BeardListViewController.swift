@@ -55,7 +55,8 @@ class BeardListViewController: UITableViewController {
   
   @IBAction func addNewBeard(_ sender: UIBarButtonItem) {
     let storyboard = UIStoryboard(name: "Main", bundle: nil)
-    let viewController = storyboard.instantiateViewController(withIdentifier: "BeardInputViewController")
+    let viewController = storyboard.instantiateViewController(withIdentifier: "BeardInputViewController") as! BeardInputViewController
+    viewController.photo = nil
     navigationController?.pushViewController(viewController, animated: true)
   }
 }
