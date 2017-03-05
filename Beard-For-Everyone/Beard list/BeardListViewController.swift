@@ -56,7 +56,7 @@ class BeardListViewController: UITableViewController {
   @IBAction func addNewBeard(_ sender: UIBarButtonItem) {
     let storyboard = UIStoryboard(name: "Main", bundle: nil)
     let viewController = storyboard.instantiateViewController(withIdentifier: "BeardInputViewController") as! BeardInputViewController
-    viewController.photo = nil
+    viewController.beard = nil
     navigationController?.pushViewController(viewController, animated: true)
   }
 }
@@ -70,7 +70,7 @@ extension BeardListViewController {
     let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath)
 
     if let type = beard.type {
-      cell.textLabel?.text = String(format: NSLocalizedString("BEARD_LIST_TEXT", comment: "two string parameter"), type, beard.length.niceLength())
+      cell.textLabel?.text = String(format: NSLocalizedString("BEARD_LIST_TEXT", comment: "two string parameter"), type, beard.length.niceLength)
     } else {
       cell.textLabel?.text = BeardType.None.rawValue
     }
@@ -102,6 +102,11 @@ extension BeardListViewController {
   
   override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
     print("row selected \(indexPath.row)")
+    
+    let storyboard = UIStoryboard(name: "Main", bundle: nil)
+    let viewController = storyboard.instantiateViewController(withIdentifier: "BeardInputViewController") as! BeardInputViewController
+    viewController.beard = beards[indexPath.row]
+    navigationController?.pushViewController(viewController, animated: true)
   }
   
   override func numberOfSections(in tableView: UITableView) -> Int {

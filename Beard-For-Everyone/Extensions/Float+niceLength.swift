@@ -10,7 +10,7 @@ import Foundation
 
 extension Float {
   
-  func niceLength() -> String {
+  var niceLength: String {
     
     let formatter = LengthFormatter()
     formatter.unitStyle = .medium

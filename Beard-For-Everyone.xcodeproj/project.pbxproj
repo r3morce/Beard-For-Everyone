@@ -17,9 +17,9 @@
 		9EC076701E6C519A000A6B32 /* BeardListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC0766E1E6C519A000A6B32 /* BeardListViewController.swift */; };
 		9EC076731E6C51F9000A6B32 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9EC076721E6C51F9000A6B32 /* Localizable.strings */; };
 		9EC076851E6C5ED6000A6B32 /* Beards.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9EC076831E6C5ED6000A6B32 /* Beards.xcdatamodeld */; };
-		9EC0768C1E6C5FBF000A6B32 /* Beard+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC0768A1E6C5FBF000A6B32 /* Beard+CoreDataClass.swift */; };
-		9EC0768D1E6C5FBF000A6B32 /* Beard+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC0768B1E6C5FBF000A6B32 /* Beard+CoreDataProperties.swift */; };
 		9EC0768F1E6C6485000A6B32 /* Float+niceLength.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC0768E1E6C6485000A6B32 /* Float+niceLength.swift */; };
+		9EC076941E6CACA4000A6B32 /* Beard+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC076921E6CACA4000A6B32 /* Beard+CoreDataClass.swift */; };
+		9EC076951E6CACA4000A6B32 /* Beard+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC076931E6CACA4000A6B32 /* Beard+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,9 +34,9 @@
 		9EC0766E1E6C519A000A6B32 /* BeardListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeardListViewController.swift; sourceTree = "<group>"; };
 		9EC076721E6C51F9000A6B32 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		9EC076841E6C5ED6000A6B32 /* Beards.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Beards.xcdatamodel; sourceTree = "<group>"; };
-		9EC0768A1E6C5FBF000A6B32 /* Beard+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Beard+CoreDataClass.swift"; sourceTree = "<group>"; };
-		9EC0768B1E6C5FBF000A6B32 /* Beard+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Beard+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		9EC0768E1E6C6485000A6B32 /* Float+niceLength.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Float+niceLength.swift"; sourceTree = "<group>"; };
+		9EC076921E6CACA4000A6B32 /* Beard+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Beard+CoreDataClass.swift"; sourceTree = "<group>"; };
+		9EC076931E6CACA4000A6B32 /* Beard+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Beard+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,8 +121,8 @@
 		9EC076781E6C5C08000A6B32 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
-				9EC0768A1E6C5FBF000A6B32 /* Beard+CoreDataClass.swift */,
-				9EC0768B1E6C5FBF000A6B32 /* Beard+CoreDataProperties.swift */,
+				9EC076921E6CACA4000A6B32 /* Beard+CoreDataClass.swift */,
+				9EC076931E6CACA4000A6B32 /* Beard+CoreDataProperties.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -210,13 +210,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				9EC0766F1E6C519A000A6B32 /* BeardInputViewController.swift in Sources */,
-				9EC0768D1E6C5FBF000A6B32 /* Beard+CoreDataProperties.swift in Sources */,
 				9EC076851E6C5ED6000A6B32 /* Beards.xcdatamodeld in Sources */,
+				9EC076951E6CACA4000A6B32 /* Beard+CoreDataProperties.swift in Sources */,
 				9EC076701E6C519A000A6B32 /* BeardListViewController.swift in Sources */,
 				9EA85C551D748C4500521255 /* Global.swift in Sources */,
 				9E56A9FD1D70028100EC7353 /* AppDelegate.swift in Sources */,
-				9EC0768C1E6C5FBF000A6B32 /* Beard+CoreDataClass.swift in Sources */,
 				9EC0768F1E6C6485000A6B32 /* Float+niceLength.swift in Sources */,
+				9EC076941E6CACA4000A6B32 /* Beard+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

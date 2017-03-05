@@ -16,8 +16,9 @@ extension Beard {
         return NSFetchRequest<Beard>(entityName: "Beard");
     }
 
-    @NSManaged public var length: Float
     @NSManaged public var date: NSDate?
+    @NSManaged public var length: Float
     @NSManaged public var type: String?
+    @NSManaged public var photo: NSData?
 
 }

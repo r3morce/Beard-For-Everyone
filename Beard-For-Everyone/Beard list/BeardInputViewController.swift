@@ -13,29 +13,13 @@ class BeardInputViewController: UIViewController {
   
   // MARK: - Properties
   
-  var photo: UIImage? {
+  var beard: Beard?
+  
+  fileprivate var photo: UIImage? {
     didSet {
-      
       beardImageView?.image = photo
       
-      if photo != nil {
-        
-        cameraButton?.isHidden = true
-        openLibraryButton?.isHidden = true
-        
-        deletePhotoButton?.isHidden = false
-        view.bringSubview(toFront: deletePhotoButton)
-        
-      } else {
-        
-        cameraButton?.isHidden = false
-        view.bringSubview(toFront: cameraButton)
-        
-        openLibraryButton?.isHidden = false
-        view.bringSubview(toFront: openLibraryButton)
-        
-        deletePhotoButton?.isHidden = true
-      }
+      updatePhotoButtons()
     }
   }
   
@@ -88,14 +72,12 @@ class BeardInputViewController: UIViewController {
   
   @IBOutlet private weak var openLibraryButton: UIButton!{
     didSet {
-      openLibraryButton.isHidden = true
       openLibraryButton.setTitle(NSLocalizedString("OPEN_PHOTO_LIBRARY_BUTTON", comment: ""), for: .normal)
     }
   }
   
   @IBOutlet private weak var deletePhotoButton: UIButton! {
     didSet {
-      deletePhotoButton.isHidden = true
       deletePhotoButton.setTitle(NSLocalizedString("DELETE_PHOTO_BUTTON", comment: ""), for: .normal)
     }
   }
@@ -148,7 +130,54 @@ class BeardInputViewController: UIViewController {
     setupLengthPicker()
   }
   
+  override func viewWillAppear(_ animated: Bool) {
+    super.viewWillAppear(animated)
+    
+    fillContent()
+    updatePhotoButtons()
+  }
+  
   // MARK: - Functions
+  
+  private func fillContent() {
+    if let beard = beard {
+      
+      if let photo = beard.photo as? Data {
+        self.photo = UIImage(data: photo,scale: 1.0)
+      }
+      
+      lengthTextfield?.text = Float(beard.length).niceLength
+      typeTextfield?.text = beard.type
+    }
+  }
+  
+  private func updatePhotoButtons() {
+    
+    if photo != nil {
+      
+      cameraButton?.isHidden = true
+      openLibraryButton?.isHidden = true
+      
+      if let deletePhotoButton = deletePhotoButton, let view = view {
+        deletePhotoButton.isHidden = false
+        view.bringSubview(toFront: deletePhotoButton)
+      }
+      
+    } else {
+      
+      if let cameraButton = cameraButton, let view = view {
+        cameraButton.isHidden = false
+        view.bringSubview(toFront: cameraButton)
+      }
+      
+      if let openLibraryButton = openLibraryButton, let view = view {
+        openLibraryButton.isHidden = false
+        view.bringSubview(toFront: openLibraryButton)
+      }
+      
+      deletePhotoButton?.isHidden = true
+    }
+  }
   
   fileprivate func setupLengthPicker() {
     let toolbar = UIToolbar()
@@ -202,10 +231,16 @@ class BeardInputViewController: UIViewController {
     }
     
     let beard = NSEntityDescription.insertNewObject(forEntityName: "Beard", into: managedContext) as! Beard
+    
     beard.type = type.rawValue
     beard.length = length
     beard.date = Date() as NSDate
     
+    if let photo = photo {
+      let data = UIImagePNGRepresentation(photo) as NSData?
+      beard.photo = data
+    }
+  
     appDelegate.saveContext()
     
     let _ = navigationController?.popViewController(animated: true)

@@ -3,9 +3,10 @@
     <entity name="Beard" representedClassName="Beard" syncable="YES">
         <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
         <attribute name="length" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="photo" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES" syncable="YES"/>
         <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Beard" positionX="-54" positionY="-9" width="128" height="90"/>
+        <element name="Beard" positionX="-54" positionY="-9" width="128" height="105"/>
     </elements>
 </model>
