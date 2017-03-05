@@ -12,13 +12,14 @@
 		9E56AA041D70028100EC7353 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E56AA031D70028100EC7353 /* Assets.xcassets */; };
 		9E56AA071D70028100EC7353 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E56AA051D70028100EC7353 /* LaunchScreen.storyboard */; };
 		9E56AA191D70135200EC7353 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9E56AA181D70135200EC7353 /* Info.plist */; };
-		9E56AA231D70147E00EC7353 /* BeardListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E56AA221D70147E00EC7353 /* BeardListViewController.swift */; };
-		9E56AA261D7014E100EC7353 /* Beard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E56AA251D7014E100EC7353 /* Beard.swift */; };
-		9EA03FC41D75E99D009919B4 /* Snap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA03FC31D75E99D009919B4 /* Snap.swift */; };
-		9EA85C531D7476A800521255 /* BeardInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA85C521D7476A800521255 /* BeardInputViewController.swift */; };
 		9EA85C551D748C4500521255 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA85C541D748C4500521255 /* Global.swift */; };
-		9EFC7D021D74A04300420F5F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9EFC7D011D74A04300420F5F /* Localizable.strings */; };
-		9EFC7D231D7560BD00420F5F /* Double+niceLength.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFC7D221D7560BD00420F5F /* Double+niceLength.swift */; };
+		9EC0766F1E6C519A000A6B32 /* BeardInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC0766D1E6C519A000A6B32 /* BeardInputViewController.swift */; };
+		9EC076701E6C519A000A6B32 /* BeardListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC0766E1E6C519A000A6B32 /* BeardListViewController.swift */; };
+		9EC076731E6C51F9000A6B32 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9EC076721E6C51F9000A6B32 /* Localizable.strings */; };
+		9EC076851E6C5ED6000A6B32 /* Beards.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9EC076831E6C5ED6000A6B32 /* Beards.xcdatamodeld */; };
+		9EC0768C1E6C5FBF000A6B32 /* Beard+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC0768A1E6C5FBF000A6B32 /* Beard+CoreDataClass.swift */; };
+		9EC0768D1E6C5FBF000A6B32 /* Beard+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC0768B1E6C5FBF000A6B32 /* Beard+CoreDataProperties.swift */; };
+		9EC0768F1E6C6485000A6B32 /* Float+niceLength.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC0768E1E6C6485000A6B32 /* Float+niceLength.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,13 +29,14 @@
 		9E56AA031D70028100EC7353 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9E56AA061D70028100EC7353 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9E56AA181D70135200EC7353 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
-		9E56AA221D70147E00EC7353 /* BeardListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeardListViewController.swift; sourceTree = "<group>"; };
-		9E56AA251D7014E100EC7353 /* Beard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Beard.swift; sourceTree = "<group>"; };
-		9EA03FC31D75E99D009919B4 /* Snap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Snap.swift; sourceTree = "<group>"; };
-		9EA85C521D7476A800521255 /* BeardInputViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeardInputViewController.swift; sourceTree = "<group>"; };
 		9EA85C541D748C4500521255 /* Global.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
-		9EFC7D011D74A04300420F5F /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = Assets.xcassets/Localizable.strings; sourceTree = "<group>"; };
-		9EFC7D221D7560BD00420F5F /* Double+niceLength.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Double+niceLength.swift"; sourceTree = "<group>"; };
+		9EC0766D1E6C519A000A6B32 /* BeardInputViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeardInputViewController.swift; sourceTree = "<group>"; };
+		9EC0766E1E6C519A000A6B32 /* BeardListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeardListViewController.swift; sourceTree = "<group>"; };
+		9EC076721E6C51F9000A6B32 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		9EC076841E6C5ED6000A6B32 /* Beards.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Beards.xcdatamodel; sourceTree = "<group>"; };
+		9EC0768A1E6C5FBF000A6B32 /* Beard+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Beard+CoreDataClass.swift"; sourceTree = "<group>"; };
+		9EC0768B1E6C5FBF000A6B32 /* Beard+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Beard+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		9EC0768E1E6C6485000A6B32 /* Float+niceLength.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Float+niceLength.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,35 +69,18 @@
 		9E56A9FB1D70028100EC7353 /* Beard-For-Everyone */ = {
 			isa = PBXGroup;
 			children = (
-				9EA85C541D748C4500521255 /* Global.swift */,
 				9EFC7D211D7560A500420F5F /* Extensions */,
-				9E56AA211D70147E00EC7353 /* BeardList */,
-				9E56AA201D70146D00EC7353 /* Beard */,
+				9EC076711E6C51AA000A6B32 /* Core data */,
+				9EC076781E6C5C08000A6B32 /* Entities */,
+				9EC076691E6C50CF000A6B32 /* Model */,
+				9EC0766C1E6C518B000A6B32 /* Beard list */,
 				9E56AA241D7014A000EC7353 /* Misc */,
 				9E56AA031D70028100EC7353 /* Assets.xcassets */,
 				9E56AA001D70028100EC7353 /* Main.storyboard */,
 				9E56A9FC1D70028100EC7353 /* AppDelegate.swift */,
-				9EFC7D011D74A04300420F5F /* Localizable.strings */,
-				9EA03FC31D75E99D009919B4 /* Snap.swift */,
+				9EA85C541D748C4500521255 /* Global.swift */,
 			);
 			path = "Beard-For-Everyone";
-			sourceTree = "<group>";
-		};
-		9E56AA201D70146D00EC7353 /* Beard */ = {
-			isa = PBXGroup;
-			children = (
-				9E56AA251D7014E100EC7353 /* Beard.swift */,
-			);
-			path = Beard;
-			sourceTree = "<group>";
-		};
-		9E56AA211D70147E00EC7353 /* BeardList */ = {
-			isa = PBXGroup;
-			children = (
-				9E56AA221D70147E00EC7353 /* BeardListViewController.swift */,
-				9EA85C521D7476A800521255 /* BeardInputViewController.swift */,
-			);
-			path = BeardList;
 			sourceTree = "<group>";
 		};
 		9E56AA241D7014A000EC7353 /* Misc */ = {
@@ -103,14 +88,48 @@
 			children = (
 				9E56AA181D70135200EC7353 /* Info.plist */,
 				9E56AA051D70028100EC7353 /* LaunchScreen.storyboard */,
+				9EC076721E6C51F9000A6B32 /* Localizable.strings */,
 			);
 			path = Misc;
+			sourceTree = "<group>";
+		};
+		9EC076691E6C50CF000A6B32 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9EC0766C1E6C518B000A6B32 /* Beard list */ = {
+			isa = PBXGroup;
+			children = (
+				9EC0766E1E6C519A000A6B32 /* BeardListViewController.swift */,
+				9EC0766D1E6C519A000A6B32 /* BeardInputViewController.swift */,
+			);
+			path = "Beard list";
+			sourceTree = "<group>";
+		};
+		9EC076711E6C51AA000A6B32 /* Core data */ = {
+			isa = PBXGroup;
+			children = (
+				9EC076831E6C5ED6000A6B32 /* Beards.xcdatamodeld */,
+			);
+			path = "Core data";
+			sourceTree = "<group>";
+		};
+		9EC076781E6C5C08000A6B32 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				9EC0768A1E6C5FBF000A6B32 /* Beard+CoreDataClass.swift */,
+				9EC0768B1E6C5FBF000A6B32 /* Beard+CoreDataProperties.swift */,
+			);
+			path = Entities;
 			sourceTree = "<group>";
 		};
 		9EFC7D211D7560A500420F5F /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				9EFC7D221D7560BD00420F5F /* Double+niceLength.swift */,
+				9EC0768E1E6C6485000A6B32 /* Float+niceLength.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -147,6 +166,7 @@
 				TargetAttributes = {
 					9E56A9F81D70028100EC7353 = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0820;
 					};
 				};
 			};
@@ -173,7 +193,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9EFC7D021D74A04300420F5F /* Localizable.strings in Resources */,
+				9EC076731E6C51F9000A6B32 /* Localizable.strings in Resources */,
 				9E56AA191D70135200EC7353 /* Info.plist in Resources */,
 				9E56AA071D70028100EC7353 /* LaunchScreen.storyboard in Resources */,
 				9E56AA041D70028100EC7353 /* Assets.xcassets in Resources */,
@@ -188,13 +208,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9E56AA261D7014E100EC7353 /* Beard.swift in Sources */,
-				9E56AA231D70147E00EC7353 /* BeardListViewController.swift in Sources */,
-				9EA85C531D7476A800521255 /* BeardInputViewController.swift in Sources */,
-				9EFC7D231D7560BD00420F5F /* Double+niceLength.swift in Sources */,
-				9EA03FC41D75E99D009919B4 /* Snap.swift in Sources */,
+				9EC0766F1E6C519A000A6B32 /* BeardInputViewController.swift in Sources */,
+				9EC0768D1E6C5FBF000A6B32 /* Beard+CoreDataProperties.swift in Sources */,
+				9EC076851E6C5ED6000A6B32 /* Beards.xcdatamodeld in Sources */,
+				9EC076701E6C519A000A6B32 /* BeardListViewController.swift in Sources */,
 				9EA85C551D748C4500521255 /* Global.swift in Sources */,
 				9E56A9FD1D70028100EC7353 /* AppDelegate.swift in Sources */,
+				9EC0768C1E6C5FBF000A6B32 /* Beard+CoreDataClass.swift in Sources */,
+				9EC0768F1E6C6485000A6B32 /* Float+niceLength.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,9 +332,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Beard-For-Everyone/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "acme-hacking.Beard-For-Everyone";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -322,9 +345,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Beard-For-Everyone/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "acme-hacking.Beard-For-Everyone";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -350,6 +375,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		9EC076831E6C5ED6000A6B32 /* Beards.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9EC076841E6C5ED6000A6B32 /* Beards.xcdatamodel */,
+			);
+			currentVersion = 9EC076841E6C5ED6000A6B32 /* Beards.xcdatamodel */;
+			path = Beards.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 9E56A9F11D70028100EC7353 /* Project object */;
 }

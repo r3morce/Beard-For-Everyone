@@ -8,16 +8,8 @@
 
 import Foundation
 
-struct Global {
-    
-    static var snaps = [
-        Snap(beard: Beard(type: .Mustache, length: 5.2), date: NSDate()),
-        Snap(beard: Beard(type: .Chin, length: 5.2), date: NSDate()),
-        Snap(beard: Beard(type: .Full, length: 5.2), date: NSDate())
-        
-    ]
-
-    
+struct EntityName {
+  static let beard = "Beard"
 }
 
 // - MARK: Enum
