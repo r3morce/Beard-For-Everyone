@@ -7,15 +7,14 @@ An iOS App where you can track your facial hair growth
 - Add new beard with type and length
 - Delete existing beards
 - Persistent beard storage
+- Add optional photo to Beard
 
 ## Todo
 
-- Edit existing beards
+- Fix editing existing beards
 - Add editable timestamp to Beard
-- Add optional photo to Beard
 - Add new beard types
 - Add Beard icons
-- Add fresh shaved bool to beard
 - Overall styling
 - Create and add app icon
 - Add proper launch screen
