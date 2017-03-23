@@ -270,8 +270,6 @@ extension BeardInputViewController: UIPickerViewDelegate, UIPickerViewDataSource
   
 }
 
-// MARK: - UIImagePickerControllerDelegate
-
 extension BeardInputViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
   
   func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
