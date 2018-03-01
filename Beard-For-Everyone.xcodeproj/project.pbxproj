@@ -11,15 +11,14 @@
 		9E56AA021D70028100EC7353 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E56AA001D70028100EC7353 /* Main.storyboard */; };
 		9E56AA041D70028100EC7353 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E56AA031D70028100EC7353 /* Assets.xcassets */; };
 		9E56AA071D70028100EC7353 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E56AA051D70028100EC7353 /* LaunchScreen.storyboard */; };
-		9E56AA191D70135200EC7353 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9E56AA181D70135200EC7353 /* Info.plist */; };
 		9EA85C551D748C4500521255 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA85C541D748C4500521255 /* Global.swift */; };
 		9EC0766F1E6C519A000A6B32 /* BeardInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC0766D1E6C519A000A6B32 /* BeardInputViewController.swift */; };
 		9EC076701E6C519A000A6B32 /* BeardListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC0766E1E6C519A000A6B32 /* BeardListViewController.swift */; };
 		9EC076731E6C51F9000A6B32 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9EC076721E6C51F9000A6B32 /* Localizable.strings */; };
 		9EC076851E6C5ED6000A6B32 /* Beards.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9EC076831E6C5ED6000A6B32 /* Beards.xcdatamodeld */; };
 		9EC0768F1E6C6485000A6B32 /* Float+niceLength.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC0768E1E6C6485000A6B32 /* Float+niceLength.swift */; };
-		9EC076941E6CACA4000A6B32 /* Beard+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC076921E6CACA4000A6B32 /* Beard+CoreDataClass.swift */; };
-		9EC076951E6CACA4000A6B32 /* Beard+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC076931E6CACA4000A6B32 /* Beard+CoreDataProperties.swift */; };
+		C7B610AF20488331001EBF2C /* Beard+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B610AD20488331001EBF2C /* Beard+CoreDataClass.swift */; };
+		C7B610B020488331001EBF2C /* Beard+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B610AE20488331001EBF2C /* Beard+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,8 +34,8 @@
 		9EC076721E6C51F9000A6B32 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		9EC076841E6C5ED6000A6B32 /* Beards.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Beards.xcdatamodel; sourceTree = "<group>"; };
 		9EC0768E1E6C6485000A6B32 /* Float+niceLength.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Float+niceLength.swift"; sourceTree = "<group>"; };
-		9EC076921E6CACA4000A6B32 /* Beard+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Beard+CoreDataClass.swift"; sourceTree = "<group>"; };
-		9EC076931E6CACA4000A6B32 /* Beard+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Beard+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		C7B610AD20488331001EBF2C /* Beard+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Beard+CoreDataClass.swift"; sourceTree = "<group>"; };
+		C7B610AE20488331001EBF2C /* Beard+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Beard+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,8 +120,8 @@
 		9EC076781E6C5C08000A6B32 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
-				9EC076921E6CACA4000A6B32 /* Beard+CoreDataClass.swift */,
-				9EC076931E6CACA4000A6B32 /* Beard+CoreDataProperties.swift */,
+				C7B610AD20488331001EBF2C /* Beard+CoreDataClass.swift */,
+				C7B610AE20488331001EBF2C /* Beard+CoreDataProperties.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -162,12 +161,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = mathias;
 				TargetAttributes = {
 					9E56A9F81D70028100EC7353 = {
 						CreatedOnToolsVersion = 7.3.1;
-						LastSwiftMigration = 0820;
+						LastSwiftMigration = 0920;
 					};
 				};
 			};
@@ -195,7 +194,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				9EC076731E6C51F9000A6B32 /* Localizable.strings in Resources */,
-				9E56AA191D70135200EC7353 /* Info.plist in Resources */,
 				9E56AA071D70028100EC7353 /* LaunchScreen.storyboard in Resources */,
 				9E56AA041D70028100EC7353 /* Assets.xcassets in Resources */,
 				9E56AA021D70028100EC7353 /* Main.storyboard in Resources */,
@@ -211,12 +209,12 @@
 			files = (
 				9EC0766F1E6C519A000A6B32 /* BeardInputViewController.swift in Sources */,
 				9EC076851E6C5ED6000A6B32 /* Beards.xcdatamodeld in Sources */,
-				9EC076951E6CACA4000A6B32 /* Beard+CoreDataProperties.swift in Sources */,
+				C7B610B020488331001EBF2C /* Beard+CoreDataProperties.swift in Sources */,
 				9EC076701E6C519A000A6B32 /* BeardListViewController.swift in Sources */,
 				9EA85C551D748C4500521255 /* Global.swift in Sources */,
 				9E56A9FD1D70028100EC7353 /* AppDelegate.swift in Sources */,
 				9EC0768F1E6C6485000A6B32 /* Float+niceLength.swift in Sources */,
-				9EC076941E6CACA4000A6B32 /* Beard+CoreDataClass.swift in Sources */,
+				C7B610AF20488331001EBF2C /* Beard+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,13 +250,21 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -298,13 +304,21 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -323,6 +337,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -337,7 +352,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "acme-hacking.Beard-For-Everyone";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -350,7 +366,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "acme-hacking.Beard-For-Everyone";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};

@@ -142,7 +142,7 @@ class BeardInputViewController: UIViewController {
   private func fillContent() {
     if let beard = beard {
       
-      if let photo = beard.photo as? Data {
+        if let photo = beard.photo as Data? {
         self.photo = UIImage(data: photo,scale: 1.0)
       }
       
